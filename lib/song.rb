@@ -7,8 +7,7 @@ class Song
   def self.table_name
     self.to_s.downcase.pluralize
   end
-  binding.pry
-
+  
   def self.column_names
     DB[:conn].results_as_hash = true
 
